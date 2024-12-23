@@ -1,0 +1,140 @@
+:root{
+    --red:red;
+    --yellow:rgb(247, 247, 84);
+    --green:rgb(33, 105, 33);
+    --white:whitesmoke;
+}
+
+.body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url('./media/pexels-donghuangmingde-3262277.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    padding: 1em;
+}
+
+header{
+    display: flex;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+   
+}
+
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex:1;
+     
+}
+
+nav a:hover{
+    color: var(--white);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    color: var(--yellow);
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+
+.tagline2{
+    color: var(--red);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 15vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,53,53),rgb(30,30,30));
+    color: var(--white);
+}
+
+    #menuheading,#locheading{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,53,53),rgb(30,30,30));
+    color: var(--red);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    }
+
+.menu th{
+ color: rgb(120, 228, 120);
+ font-size: 1.8em;
+}
+
+table{
+    width: 100% ;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self:left;
+}
+.menu td:nth-child(2){
+    justify-self:right;
+}
+
+.location{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,53,53),rgb(30,30,30));
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location h2{
+    color:  rgb(120, 228, 120);
+    margin-bottom: .8em;
+}
+
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+
